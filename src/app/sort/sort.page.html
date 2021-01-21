@@ -1,0 +1,25 @@
+<ion-header class='ion-no-border'>
+  <ion-toolbar>
+    <ion-title class='ion-text-center'>Sort</ion-title>
+    
+    <ion-buttons slot='start'>
+      <ion-back-button defaultHref="#"></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot='end'>
+      <ion-button>
+        A-Z
+      </ion-button>
+    
+    </ion-buttons> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label color='secondary'>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

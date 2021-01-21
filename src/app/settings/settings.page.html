@@ -1,0 +1,22 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon class="arr-icn" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Settings (Notifications)</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button> <p class="logout-text">Logout</p> </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let entry of form" (click)="goTo(entry)">
+      <ion-label class="label-cl">{{entry.val}}</ion-label>
+      <ion-icon class="icnLeft" name="chevron-forward-outline"></ion-icon>
+      <!-- <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox> -->
+    </ion-item>
+  </ion-list>
+</ion-content>

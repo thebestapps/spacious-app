@@ -1,0 +1,45 @@
+ion-toolbar {
+  height: 70px;
+  ion-searchbar {
+    margin-top: 15px;
+    --background: transparent;
+    --placeholder-color: black;
+    --border-radius: 10px;
+    --placeholder-opacity: 10;
+  }
+  ion-label {
+    font-size: 20px;
+    margin-right: 18px;
+    margin-top: 20px;
+  }
+}
+.segmentBtn {
+  margin-top: 10px;
+  ion-segment-button[aria-selected="true"] {
+    border-bottom: 3px solid red;
+  }
+  ion-segment-button {
+    --color: var(--ion-color-primary);
+    --background-checked: white;
+    --border-radius: 5px;
+    border: 1px solid;
+    --indicator-height: 0px;
+    --background: transparent;
+    text-transform: none;
+    font-size: 10px;
+    height: 30px;
+    min-height: 30px;
+    /*       margin: 0px;
+        width: 75px;
+        min-width: 75px; */
+  }
+  .bullet {
+    width: 6px;
+    height: 6px;
+    margin-top: 7px;
+    margin-left: -10px;
+    position: absolute;
+    background-color: rgb(15, 146, 15);
+    border-radius: 50%;
+  }
+}

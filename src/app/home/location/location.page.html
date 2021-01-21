@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-searchbar placeholder="City,Address,School,Zip"></ion-searchbar>
+    <!-- <ion-buttons slot='end'>
+      <ion-button>
+        <ion-icon name='paper-plane-outline'></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+
+    <ion-label slot="end" color="primary" (click)="navSort()"> List </ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <div class="segmentBtn">
+    <ion-segment value="rent" [(ngModel)]="segmentModel">
+      <ion-row>
+        <ion-col size="3">
+          <ion-segment-button value="rent">
+            <ion-label>
+              <span class="bullet" *ngIf="segmentModel === 'rent'"></span>
+              For Rent
+            </ion-label>
+          </ion-segment-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-segment-button value="less">
+            <ion-label>
+              <span class="bullet" *ngIf="segmentModel === 'less'"></span>
+              < $ 2,500
+            </ion-label>
+          </ion-segment-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-segment-button value="hometype">
+            <ion-label>
+              <span class="bullet" *ngIf="segmentModel === 'hometype'"></span>
+              Home Type
+            </ion-label>
+          </ion-segment-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-segment-button value="more">
+            <ion-label>
+              <span class="bullet" *ngIf="segmentModel === 'more'"></span>
+              More
+            </ion-label>
+          </ion-segment-button>
+        </ion-col>
+      </ion-row>
+    </ion-segment>
+  </div>
+</ion-content>

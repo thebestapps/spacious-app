@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar placeholder="City,Address,School,Zip"></ion-searchbar>
+    <!-- <ion-buttons slot='end'>
+      <ion-button>
+        <ion-icon name='paper-plane-outline'></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+    <ion-label slot="end" color="primary" (click)="sortPage()">
+      List
+    </ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="segmentBtn">
+    <ion-segment value="rent" [(ngModel)]="segmentModel">
+      <ion-segment-button value="rent">
+        <ion-label>
+          <span class="bullet" *ngIf="segmentModel === 'rent'"></span>
+          For Rent
+        </ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="less">
+        <ion-label>
+          <span class="bullet" *ngIf="segmentModel === 'less'"></span>
+          < $ 2,500
+        </ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="hometype">
+        <ion-label>
+          <span class="bullet3" *ngIf="segmentModel === 'hometype'"></span>
+          Home Type
+        </ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button
+        (click)="goNavigateMore()"
+        value="more"
+        class="moreBtn"
+      >
+        <ion-label>
+          <span class="bullet" *ngIf="segmentModel === 'more'"></span>
+          More
+        </ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <ion-card
+    class="hotelCard"
+    *ngFor="let i of [1,2,3,4,5]"
+    (click)="openCard()"
+  >
+    <ion-item class="btnItem">
+      <ion-button
+        #button1
+        fill="clear"
+        class="wishlistBtn"
+        slot="end"
+        color="light"
+        size="large"
+        (click)="btnActivate(button1)"
+      >
+        <ion-icon name="heart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <img src="assets/hotel4.jpg" />
+
+    <ion-card-header>
+      <ion-card-title>
+        <b>$ 1,900/mo</b>
+        <p>4 bds | 3 ba | 2,447 sqft</p>
+      </ion-card-title>
+      <ion-card-subtitle color="dark">
+        9742 W Tompkins Ave, Spring Valley, NV
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <span class="bullet"></span>
+      <p>House for rent | Rent Googlement @ $1,820/mo</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-button class="savBtn" expand="full"> Save Search </ion-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-button class="filterBtn" expand="full" (click)="navFilter()">
+      Filter
+    </ion-button>
+  </ion-fab>
+</ion-content>

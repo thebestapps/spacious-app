@@ -1,0 +1,8 @@
+{
+  "name": "MoneyControl",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

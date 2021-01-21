@@ -1,0 +1,286 @@
+ion-toolbar {
+  height: 70px;
+  ion-searchbar {
+    margin-top: 15px;
+    --background: transparent;
+    --placeholder-color: black;
+    --border-radius: 10px;
+    --placeholder-opacity: 10;
+  }
+  ion-label {
+    font-size: 20px;
+    margin-right: 18px;
+    margin-top: 20px;
+  }
+}
+.segmentBtn {
+  /*  ion-segment-button[aria-selected=true] {
+        border-bottom: 3px solid red;
+       } */
+  margin-top: 10px;
+  width: 100%;
+  ion-segment-button {
+    margin-left: 10px;
+    --color: var(--ion-color-primary);
+    --background-checked: white;
+    --border-radius: 5px;
+    border: 1px solid;
+    --indicator-height: 0px;
+    --background: transparent;
+    text-transform: none;
+    font-size: 11px;
+    height: 30px;
+    min-height: 30px;
+    width: 80px;
+    min-width: 80px;
+  }
+  .moreBtn {
+    width: 50px;
+    min-width: 50px;
+    margin-right: 10px;
+  }
+  .bullet {
+    width: 6px;
+    height: 6px;
+    margin-top: 8px;
+    margin-left: -10px;
+    position: absolute;
+    background-color: rgb(15, 146, 15);
+    border-radius: 50%;
+  }
+  .bullet3 {
+    width: 6px;
+    height: 6px;
+    margin-top: 8px;
+    margin-left: -8px;
+    position: absolute;
+    background-color: rgb(15, 146, 15);
+    border-radius: 50%;
+  }
+}
+.hotelCard {
+  margin: 0px;
+  margin-top: 10px;
+  border-radius: 0px;
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: -56px;
+  }
+  .btnItem {
+    --background: transparent;
+    .wishlistBtn {
+      /*  --color : white;
+            --color-activated : red; */
+      margin-right: -25px;
+      margin-top: -5px;
+    }
+  }
+  ion-card-title {
+    display: flex;
+    margin-bottom: -10px;
+    p {
+      margin-top: 5px;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+  }
+  ion-card-subtitle {
+    margin-top: 0px;
+    font-size: 13px;
+  }
+  ion-card-content {
+    margin-top: -5px;
+    p {
+      margin-left: 10px;
+      font-size: 10px;
+      color: black;
+    }
+    .bullet {
+      width: 7px;
+      height: 7px;
+      margin-top: 4px;
+      position: absolute;
+      background-color: rgb(15, 146, 15);
+      border-radius: 50%;
+    }
+  }
+}
+ion-fab {
+  ion-button {
+    margin: 15px;
+    height: 30px;
+    min-height: 30px;
+    font-size: 12px;
+    width: 130px;
+    text-transform: none;
+  }
+}
+
+// ===
+
+p.logout-text {
+  color: #4686f7;
+  text-transform: capitalize;
+  text-shadow: 0px 2px #d7d8da;
+}
+
+ion-title.ion-text-center.md.title-default.hydrated {
+  color: #333;
+  margin-left: 19px;
+}
+
+ion-title.ion-text-center.ios.title-default.hydrated {
+  color: #333;
+  margin-left: 19px;
+}
+
+ion-toolbar.toolbar-title-default.md.in-toolbar.hydrated {
+  --background: #fbfafa;
+}
+
+ion-toolbar.toolbar-title-default.ios.in-toolbar.hydrated {
+  --background: #fbfafa;
+}
+
+ion-content.md.hydrated {
+  --background: #fbfafa;
+}
+
+ion-content.ios.hydrated {
+  --background: #fbfafa;
+}
+
+.over-lapp {
+  background: #4686f7;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: -23px;
+  /* height: 36px; */
+  padding-top: -20px !important;
+  height: 29px;
+  color: white;
+}
+
+p.txt {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.spacing-container {
+  margin-left: 23px;
+}
+
+.contain {
+  border: 1px solid lightgray;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  margin-top: 14px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.free-content {
+  border-top: 1px solid #4686f7;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+p.quest {
+  font-weight: 600;
+  margin-left: -2px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+p.txt-desc-long {
+  margin-top: -4px;
+  color: #060606b0;
+}
+
+button.pick-my {
+  background: #4686f7;
+  border-radius: 60px;
+  height: 34px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.items {
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 24px;
+}
+
+.new-item {
+  border-top: 1px solid #4686f7;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+img.fav-icn {
+  height: 36px;
+  margin-right: 14px;
+}
+
+p.txt-inp {
+  display: table;
+  margin-top: -41px;
+  margin-left: 48px;
+  /* color: gray; */
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+p.txt-desc {
+  display: table;
+  margin-top: -14px;
+  margin-left: 48px;
+  /* color: gray; */
+  /* font-weight: bold; */
+  color: rgb(0 0 0 / 61%);
+}
+
+button.btn-my {
+  background: #4686f7;
+  border-radius: 60px;
+  height: 34px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.items {
+  border-bottom: 1px solid #4686f7;
+  padding-bottom: 23px;
+}
+
+p.txt-similar {
+  font-weight: 600;
+  margin-left: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+}
+
+ion-card.hotelCard.Initial.md.hydrated {
+  margin: 0px;
+  margin-top: 10px;
+  border-bottom-left-radius: 38px;
+  border-bottom-right-radius: 38px;
+  border: 1px solid #8080808a;
+  margin-bottom: 30px;
+}
+
+ion-card.hotelCard.Initial.ios.hydrated {
+  margin: 0px;
+  margin-top: 10px;
+  border-bottom-left-radius: 38px;
+  border-bottom-right-radius: 38px;
+  border: 1px solid #8080808a;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,128 @@
+ion-list {
+  margin-top: -10px;
+  ion-item {
+    height: 50px !important;
+    border-bottom: #d4d7dc;
+  }
+  ion-checkbox {
+    background: #fbfafa;
+    --size: 25px;
+    --checkmark-color: #4686f7;
+    --background-checked: #fbfafa;
+    --border-color: #fbfafa;
+    --border-color-checked: #fbfafa;
+  }
+}
+
+ion-icon.arr-icn.md.hydrated {
+  background: #4686f7;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  margin-left: 6px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+ion-icon.arr-icn.ios.hydrated {
+  background: #4686f7;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  margin-left: 6px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+ion-item.item.md.in-list.ion-focusable.hydrated.item-label {
+  margin-top: 18px;
+  margin-left: 10px;
+  margin-right: 12px;
+}
+
+ion-item.item.ios.in-list.ion-focusable.hydrated.item-label {
+  margin-top: 18px;
+  margin-left: 10px;
+  margin-right: 12px;
+}
+
+ion-list.md.list-md.hydrated {
+  background: #fbfafa;
+}
+
+ion-list.ios.list-md.hydrated {
+  background: #fbfafa;
+}
+
+ion-icon.icnLeft.md.hydrated {
+  color: #4686f7;
+  font-size: 30px;
+}
+
+ion-icon.icnLeft.ios.hydrated {
+  color: #4686f7;
+  font-size: 30px;
+}
+
+ion-label.label-cl.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+  color: rgb(0 0 0 / 69%);
+  font-size: 19px;
+}
+
+ion-label.label-cl.sc-ion-label-ios-h.sc-ion-label-ios-s.ios.hydrated {
+  color: rgb(0 0 0 / 69%);
+  font-size: 19px;
+}
+
+ion-content.md.hydrated {
+  --background: #fbfafa;
+}
+
+ion-content.ios.hydrated {
+  --background: #fbfafa;
+}
+
+ion-item.item.md.in-list.ion-focusable.hydrated.item-label {
+  --background: #fbfafa;
+}
+
+ion-item.item.ios.in-list.ion-focusable.hydrated.item-label {
+  --background: #fbfafa;
+}
+
+ion-toolbar.toolbar-title-default.md.in-toolbar.hydrated {
+  --background: #fbfafa;
+}
+
+ion-toolbar.toolbar-title-default.ios.in-toolbar.hydrated {
+  --background: #fbfafa;
+}
+
+p.logout-text {
+  color: #4686f7;
+  text-transform: capitalize;
+  text-shadow: 0px 2px #d7d8da;
+}
+ion-title.ion-text-center.md.title-default.hydrated {
+  color: #333;
+  margin-left: 19px;
+}
+
+ion-title.ion-text-center.ios.title-default.hydrated {
+  color: #333;
+  margin-left: 19px;
+}
+
+ion-list.md.list-md.hydrated {
+  margin-top: 11px;
+  background: #fbfafa;
+}
+
+ion-list.md.list-ios.hydrated {
+  margin-top: 11px;
+  background: #fbfafa;
+}

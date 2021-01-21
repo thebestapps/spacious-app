@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="Back()">
+      <ion-icon class="arr-icn" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="agent-box">
+    <p class="txt-add">Add Agent</p>
+    <p class="text-content">
+      Your agent can come on your homes and view your favourite list
+    </p>
+
+    <ion-row class="row-cls">
+      <ion-col style="text-align: center">
+        <ion-input
+          style="
+            background: rgb(0 0 0 / 6%);
+            margin-top: 66px;
+            margin-left: 30px;
+            /* margin-right: 100px; */
+            width: 325px;
+            /* height: 46px; */
+            margin-bottom: 20px;
+            border-bottom: 4px solid #8080802b;
+            margin: auto;
+            display: block;
+            margin-top: 50px;
+            margin-bottom: 20px;
+          "
+          class="text"
+          class="agent-email"
+          placeholder="Agents Email"
+        >
+        </ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-button class="send-invite-box"> Send Invite </ion-button>
+  </div>
+</ion-content>

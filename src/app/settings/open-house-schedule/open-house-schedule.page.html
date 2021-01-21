@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="goTo()">
+      <ion-icon class="arr-icn" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Open House Schedule</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button> <p class="logout-text">Logout</p> </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <div class="box-inner">
+    <ion-row class="row-cls">
+      <ion-col>
+        <ion-button class="dark-btn">Upcoming</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="light-btn">Past</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="txt-cont">
+    <p class="txt-inner">Prices in local currency.</p>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="middle">
+    <p class="text-content">Save open houses to help plan your weekend.</p>
+  </div>
+</ion-content>

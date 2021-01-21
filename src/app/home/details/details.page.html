@@ -1,0 +1,140 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="goTo()">
+      <ion-icon class="arr-icn" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="initial-card">
+    <ion-card class="hotelCard Initial">
+      <ion-item class="btnItem">
+        <ion-button
+          #button1
+          fill="clear"
+          class="wishlistBtn"
+          slot="end"
+          color="light"
+          size="large"
+          (click)="btnActivate(button1)"
+        >
+          <ion-icon class="heartoutline" name="heart-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+      <img src="assets/hotel4.jpg" />
+      <div class="spacing-container">
+        <ion-card-header>
+          <ion-card-title>
+            <b>$ 2,780,000</b>
+            <!-- <p> | 3 ba | 2,447 sqft</p> -->
+          </ion-card-title>
+          <ion-card-subtitle color="dark">
+            <p class="txt-add">
+              <ion-icon class="loc-icn" name="location-outline"></ion-icon>
+
+              1120 Ceaser Ave, Burnaby Toronto
+            </p>
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <div class="display-icns">
+                <ion-icon class="icn-footer" name="bed-outline"></ion-icon>
+                <p class="txt-footer">4</p>
+                <p class="txt-align">Beds</p>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div class="display-icns">
+                <ion-icon class="icn-footer" name="bed-outline"></ion-icon>
+                <p class="txt-footer">4</p>
+                <p class="txt-align">Beds</p>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div class="display-icns">
+                <ion-icon class="icn-footer" name="bed-outline"></ion-icon>
+                <p class="txt-footer">4</p>
+                <p class="txt-align">Beds</p>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div class="display-icns">
+                <ion-icon class="icn-footer" name="bed-outline"></ion-icon>
+                <p class="txt-footer">4</p>
+                <p class="t xt-align">Beds</p>
+              </div>
+            </ion-col>
+          </ion-row>
+          <span class="bullet"></span>
+          <p>House for rent | Rent Googlement @ $1,820/mo</p>
+        </ion-card-content>
+      </div>
+    </ion-card>
+  </div>
+
+  <div class="owners-container">
+    <div class="contain">
+      <img src="../../../assets/icon/favicon.png" class="fav-icn" />
+      <p class="txt-inp">Name</p>
+      <p class="txt-desc">Lorem ipsum dummy content</p>
+    </div>
+  </div>
+
+  <div class="free-content">
+    <p class="quest">Feel like home?</p>
+    <p class="txt-desc-long">
+      Get Started Lorem ipsum dummy content Lorem ipsum dummy content Lorem
+      ipsum dummy content Lorem ipsum dummy content
+    </p>
+
+    <button class="pick-my">Pick My Data</button>
+  </div>
+
+  <div class="items">
+    <div class="new-item">
+      <p class="txt-title">About the home</p>
+    </div>
+    <div class="new-item">
+      <p class="txt-title">At a glance</p>
+    </div>
+    <div class="new-item">
+      <p class="txt-title">Schools</p>
+    </div>
+    <div class="new-item">
+      <p class="txt-title">Also selling?</p>
+    </div>
+
+    <button class="btn-my">Get a free offer</button>
+  </div>
+
+  <p class="txt-similar">Similar homes</p>
+  <ion-card class="hotelCard" *ngFor="let i of [1,2,3,4,5]">
+    <ion-item class="btnItem">
+      <ion-button
+        #button1
+        fill="clear"
+        class="wishlistBtn"
+        slot="end"
+        color="light"
+        size="large"
+        (click)="btnActivate(button1)"
+      >
+        <ion-icon name="heart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <img src="assets/hotel4.jpg" />
+    <div class="spacing-container">
+      <ion-card-header>
+        <ion-card-subtitle color="dark"> 3204 Edison St </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="txt-inner-card">Las Vegas</p>
+      </ion-card-content>
+    </div>
+  </ion-card>
+</ion-content>

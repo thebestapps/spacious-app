@@ -1,0 +1,48 @@
+.rangeItem{
+  margin-top: 10px;
+  .bathroomItem{
+    margin-top: -10px;
+  }
+  ion-range::part(pin) {
+    transform: translate3d(0px, -24px, 0px) scale(1);
+  }
+  ion-range{
+    --bar-height : 3px;
+    --bar-background : var(--ion-color-primary);
+  }
+}
+.property{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    ion-button{
+      /* --color : black;
+      --background : white; */
+      font-size: 12px;
+      width: 100%;
+      text-transform: none;
+    }
+    
+    .feetBtns{
+      width: 80%;
+      ion-button{
+      --background-activated : blue;
+      }
+    }
+    .propertyBtns{
+      width: 100%;
+      ion-button{
+        height: 50px;
+      }
+    }
+    .otherBtns{
+      width: 100%;
+    }
+}
+.footerBtns{
+  margin: 30px;
+  ion-button{
+    text-transform: none;
+    --border-radius: 10px;
+  }
+}

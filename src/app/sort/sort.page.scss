@@ -1,0 +1,15 @@
+ion-list{
+    margin-top: -10px;
+    ion-item{
+        height: 50px !important;  
+        border-bottom: 1px solid rgb(199, 197, 197);
+    }
+    ion-checkbox{
+        background: #FFFFFF; 
+        --size : 25px;
+         --checkmark-color:rgb(0, 174, 255);
+         --background-checked: #FFFFFF;
+         --border-color: #FFFFFF;
+         --border-color-checked :#FFFFFF;
+    }
+}

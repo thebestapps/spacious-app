@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="goTo()">
+      <ion-icon class="arr-icn" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Types Of Notifications</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button> <p class="logout-text">Logout</p> </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let entry of form" (click)="goToNav(entry)">
+      <ion-label class="label-cl">{{entry.val}}</ion-label>
+      <ion-toggle
+        color="success"
+        [(ngModel)]="entry.isChecked"
+        class="icn-toggle"
+        *ngIf="entry.isChecked"
+      ></ion-toggle>
+      <ion-toggle
+        style="--background: #ec5043"
+        [(ngModel)]="entry.isChecked"
+        class="icn-toggle"
+        *ngIf="!entry.isChecked"
+        color="#ec5043"
+      ></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>
